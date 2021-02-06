@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(172, 192, 201);
+}
+
+ul{
+    list-style: none;
+    padding-left: 15px;
+    margin: 0;
+    font-size: 20px;
+    overflow: scroll;
+    height: 100%;
+
+}
+ul::-webkit-scrollbar{
+    display: none;
+}
+
+li{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.deleteBtn{
+    position: absolute;
+    right: 10px;
+}
+
+.deleteBtn:hover{
+    cursor: pointer;
+}
+
+section{
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 500px;
+    
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.349) 10px 10px 40px;
+    font-size: 50px;
+}
+
+.listbox{
+    background-color: cornsilk;
+    width: 500px;
+    height: 600px;
+    margin-top: 50px;
+}
+
+#todoInput{
+    width: 100%;
+    border: none;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+.addBtn:hover{
+    cursor: pointer;
+}
+
