@@ -1,6 +1,9 @@
 const addBtn = document.querySelector('.addBtn');
 const todoList = document.querySelector('.todoList');
 const todoInput = document.querySelector('#todoInput');
+var mql = window.matchMedia("screen and (max-width: 768px)");
+
+출처: https://offbyone.tistory.com/122 [쉬고 싶은 개발자]
 // 클릭시 추가
 addBtn.addEventListener('click',()=>{
     makeFianltodoList();
@@ -22,7 +25,11 @@ function makeFianltodoList(){
         todoInput.value='';
     }
     // 추가하고 나서 자동으로 focus 되게 하기
-    todoInput.select();
+    // matches를 이용하여 반응형이 아닐경우 자동 focus 동작 x
+    if(!mql.matches){
+        todoInput.select();
+    }
+    
 }
 
 // <li> 만들고 추가하는 function
