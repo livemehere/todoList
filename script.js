@@ -3,7 +3,7 @@ const todoList = document.querySelector('.todoList');
 const todoInput = document.querySelector('#todoInput');
 var mql = window.matchMedia("screen and (max-width: 768px)");
 
-출처: https://offbyone.tistory.com/122 [쉬고 싶은 개발자]
+
 // 클릭시 추가
 addBtn.addEventListener('click',()=>{
     makeFianltodoList();
